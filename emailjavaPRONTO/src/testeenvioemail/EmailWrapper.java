@@ -25,7 +25,7 @@ public class EmailWrapper {
 
     private void setarPropriedades() {
         this.propriedades = new Properties();
-        this.propriedades.put("mail.smtp.host", "mail.dextak.com");
+        this.propriedades.put("mail.smtp.host", "mail.dextak.com");//lembrar de mudar de acordo com o servidor do email
         this.propriedades.put("mail.smtp.socketFactory.port", "465");
         this.propriedades.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         this.propriedades.put("mail.smtp.auth", "true");
@@ -37,7 +37,7 @@ public class EmailWrapper {
                 new javax.mail.Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("senai.teste@dextak.com", "(senai)");
+                return new PasswordAuthentication("umemail@dextak.com", "senha");
             }
         });
     }
