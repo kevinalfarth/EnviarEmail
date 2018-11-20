@@ -11,7 +11,7 @@ public class TesteEnvioEmail {
         EmailWrapper e = new EmailWrapper();
         
         String remetente = "sistema@dextak.com";
-        String destinatario = "wagner@dextak.com.br";
+        String destinatario = "emailaleatorio@dextak.com.br";
         String assunto = "Teste 2";
         String msg = "Hey cara isto é um teste";
         
